@@ -1,0 +1,3 @@
+Paramater tracking is done using Extended Kalman filter on a Spring mass damper dynamical system.
+Parameters such as mass, omega, zeta are unknowns and velocity, displacement are to be estimated for the certain finite time step.
+Tracking signal is 'Measured acceleration'

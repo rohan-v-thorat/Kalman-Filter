@@ -5,7 +5,7 @@ function [M,P] = ekf_predict(M,P,u,dt,Q)
     der_Ad_phi = [ 0 0 0; 0 -2*exp(M(2)) 0;...
         0 0 0; 0 -2*exp(M(3))*exp(M(2)) -2*exp(M(3))*exp(M(2))]*dt;
     u_multipy_I = [u 0; 0 u];
-    der_Bd_phi = [0; exp(-M(1))]*dt;
+    der_Bd_phi = [0 0 0; exp(-M(1)) 0 0]*dt;
 
 % Ad, Bd, der_f2_phi, der_f2_x
     Ad = [1 0 ; 0 1] + [0 1; -exp(M(2))^2 -2*exp(M(3))*exp(M(2))]*dt;

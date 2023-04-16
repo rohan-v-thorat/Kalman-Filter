@@ -79,7 +79,7 @@ disp(' ');
 
 for k=1:size(y',2)
     [M,P] = kf_predict(M,P,Ad,Bd,u(k),Q);
-    [M,P] = kf_update(M,P,y(k),C,R);
+    [M,P] = kf_update(M,P,y(k),C,D,u(k),R);
 
     MM(:,k) = M;
     PP(:,:,k) = P;

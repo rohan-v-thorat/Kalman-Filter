@@ -52,13 +52,13 @@ noise = noise_std*randn(size(qddot));
 y = qddot + noise;
 
 %% discretized the noise Q
-q = 0.1;
-Q = diag([0 q]);
-L = eye(2);
-n   = size(Ac,1);
-Phi = [Ac L*Q*L'; zeros(n,n) -Ac'];
-AB  = expm(Phi*dt)*[zeros(n,n);eye(n)];
-Q   = AB(1:n,:)/AB((n+1):(2*n),:);
+%q = 0.1;
+%Q = diag([0 q]);
+%L = eye(2);
+%n   = size(Ac,1);
+%Phi = [Ac L*Q*L'; zeros(n,n) -Ac'];
+%AB  = expm(Phi*dt)*[zeros(n,n);eye(n)];
+%Q   = AB(1:n,:)/AB((n+1):(2*n),:);
 
 Q = 10000*diag([0.001; 0.01]);
 R = 10;

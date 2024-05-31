@@ -129,7 +129,7 @@ for k = 1:size(y',2)
  grid on;
 
  subplot(3,1,3);
- plot(t, qddot, 'k', t, (C*MM+D*u)', 'r', 'linewidth', 1.2);
+ plot(t, qddot, 'b', t, (C*MM+D*u)', 'r', 'linewidth', 1.2);
  title('acceleration')
 
  grid on;

@@ -33,7 +33,7 @@ The $f()$ and $g()$ can be linear or nonlinear.
 
 
 
-# result from matlab code
+# Result from matlab code
 
 
 <img width="1163" alt="Result_from_matlab" src="Result_from_matlab.png">

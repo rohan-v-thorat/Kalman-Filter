@@ -1,3 +1,36 @@
 # Ensemble kalman filter
 
+Kalman filter has been a popular choice to filter out the noise from the data and estimate the hidden state in real-time. It has been in use long back before there was enough  computational resources available as it is takes only $O(N)$ computational time. More general detailed info can be refered from the readme file outside this folder. Here we will look into more detailed in Ensemble Kalman Filter.
+
+Kalman Filter is applicable for only linear process equation and linear measurement equation i.e why there was need for modification in original kalman filter. One of the modified Kalman filter is Ensemble kalman filter. 
+
+#### Process equation:
+$x_{t+1} = f(x_t,u_t)$
+
+#### Measurement equation:
+$y_{t} = g(x_t,u_t)$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# result
+
+
 <img width="1163" alt="Result_from_matlab" src="Result_from_matlab.png">

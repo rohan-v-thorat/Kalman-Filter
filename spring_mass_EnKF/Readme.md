@@ -10,6 +10,7 @@ $x_{t+1} = f(x_t,u_t)$
 #### Measurement equation:
 $y_{t} = g(x_t,u_t)$
 
+The $f()$ and $g()$ can be linear or nonlinear.
 
 
 
@@ -30,7 +31,9 @@ $y_{t} = g(x_t,u_t)$
 
 
 
-# result
+
+
+# result from matlab code
 
 
 <img width="1163" alt="Result_from_matlab" src="Result_from_matlab.png">

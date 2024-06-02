@@ -46,14 +46,14 @@ qddot = outputt(:,3);
  
 
 % Add noise to measurements
-noise_percentage = 0;
+noise_percentage = 1;
 noise_std = noise_percentage/100*rms(qddot);
 noise = noise_std*randn(size(qddot));
 y = qddot + noise;
 
 %% discretized the noise Q
-Q = 1*diag([0.001; 0.01]);
-R = 1;
+Q = 1e-3*eye(2);
+R = 10;
 Q_chol = chol(Q);
 R_chol = chol(R);
 
@@ -120,7 +120,7 @@ for k = 1:size(y',2)
  subplot(3,1,1);
  plot(t,qdisp,'b',t,MM(1,:),'r','linewidth',1.2)
  title('displacement')
-  legend('True','Estimated')
+ legend('True','Estimated')
  grid on;
 
  subplot(3,1,2);

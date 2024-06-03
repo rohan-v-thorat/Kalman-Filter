@@ -96,7 +96,7 @@ for k = 1:size(y',2)
 
     y_meas_samples = y_meas + R_chol*randn(m,q);
     y_meas_mean = mean(y_meas_samples,2);
-
+    
     E_yy = y_meas_samples - y_meas_mean;
     P_yy = 1/(q-1)*(E_yy*E_yy');
     P_xy = 1/(q-1)*(E_xx*E_yy');

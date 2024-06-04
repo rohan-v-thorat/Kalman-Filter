@@ -17,7 +17,7 @@ $$x^i_t = f(x^i_{t-1},u_{t-1})$$
 
 where $i$ corresponds to sample no.
 
-$$\bar{x}_t = 1/q \sum_{i=1}^{i=q} x^i_t$$
+$\bar{x}_t = 1/q \sum_{i=1}^{i=q} x^i_t$
 
 $$E_{x_t} = [x^1_t-\bar{x}_t,....,x^q_t-\bar{x}_t ]$$
 

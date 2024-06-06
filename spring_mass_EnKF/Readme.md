@@ -23,7 +23,7 @@ where $i$ corresponds to sample no.
 
 $$E_{x_t} = [x^1_t-\bar{x}_t,....,x^q_t-\bar{x}_t ]$$
 
-#### Update/ analysis step:
+#### Update/analysis step:
 $$y^i_t = g(x^i_t,u_t)$$
 
 $$E_{y_t} = [y^1_t-\bar{y}_t,....,y^q_t-\bar{y}_t ]$$

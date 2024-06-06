@@ -17,8 +17,6 @@ $$x^i_t = f(x^i_{t-1},u_{t-1})$$
 
 where $i$ corresponds to sample no.
 
-$$\bar{x}_t = \sum_{i=1}^{i=q} x^i_t/q$$
-
 ```math
 \bar{x}_t = \sum_{i=1}^{i=q} x^i_t/q
 ```

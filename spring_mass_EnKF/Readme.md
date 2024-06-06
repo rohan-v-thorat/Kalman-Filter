@@ -36,7 +36,9 @@ $$K =  P_{xy}/P_{yy}$$
 
 $$x^i_t = x^i_t + K(y_m - y^i_t)$$
 
-$$ \bar{x}_t = 1/q \sum_{i=1}^{i=q} x^i_t $$
+```math
+\bar{x}_t = \sum_{i=1}^{i=q} x^i_t/q
+```
 
 $$E_{x_t} = [x^1_t-\bar{x}_t,....,x^q_t-\bar{x}_t ]$$
 

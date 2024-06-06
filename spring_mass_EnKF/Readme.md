@@ -24,6 +24,22 @@ $$E_{x_t} = [x^1_t-\bar{x}_t,....,x^q_t-\bar{x}_t ]$$
 #### Update/ analysis step:
 $$y^i_t = g(x^i_t,u_t)$$
 
+$$E_{y_t} = [y^1_t-\bar{y}_t,....,y^q_t-\bar{y}_t ]$$
+
+$$P_{yy} = 1/(q-1)(E_{y_t}E_{y_t}^{\text{T}})$$
+
+$$P_{xy} = 1/(q-1)(E_{x_t}E_{y_t}^{\text{T}})$$
+
+$$K =  P_{xy}/P_{yy}$$
+
+$$x^i_t = x^i_t + K(y_m - y^i_t)$$
+
+$$ \bar{x}_t = 1/q \sum_{i=1}^{i=q} x^i_t $$
+
+$$E_{x_t} = [x^1_t-\bar{x}_t,....,x^q_t-\bar{x}_t ]$$
+
+$$P_{xx} = 1/(q-1)(E_{x_t}E_{x_t}^{\text{T}})$$
+
 [NOT YET COMPLETED]
 
 

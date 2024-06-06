@@ -73,7 +73,7 @@ disp(' ');
 
 n = 2; % size of state
 m = 1; % size of measurement y
-q = 1000; % number of samples
+q = 100; % number of samples
 x_samples = M + Q_chol*randn(n,q);
 
 for k = 1:size(y',2)
@@ -95,7 +95,7 @@ for k = 1:size(y',2)
     end    
 
     y_meas_samples = y_meas + R_chol*randn(m,q);
-    y_meas_mean = mean(y_meas_samples,2);
+    y_meas_mean = mean(y_samples,2); % check whether to take mean of y_samples or y_meas_samples
     
     E_yy = y_meas_samples - y_meas_mean;
     P_yy = 1/(q-1)*(E_yy*E_yy');

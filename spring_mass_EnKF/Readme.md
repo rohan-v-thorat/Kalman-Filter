@@ -12,6 +12,7 @@ $$y_{t} = g(x_t,u_t)$$
 
 The $f()$ and $g()$ can be linear or nonlinear.
 
+### Algorithm
 #### Predict/forecast step:
 $$x^i_t = f(x^i_{t-1},u_{t-1})$$  
 
